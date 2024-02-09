@@ -14,15 +14,15 @@
 
 We build products that create one cohesive vision and experience.
 
-### GNOME Shell
+### Desktop
 
-Desktop environment for PC and mobile operating systems. Designed based on user testing and research with input from industry stakeholders to be intuitive and efficient.
+We develop GNOME Shell, a desktop environment for PC operating systems. Designed based on user testing and research with input from industry stakeholders to be intuitive and efficient.
 
 ![Activities](https://www.gnome.org/wp-content/uploads/2023/09/GNOME45-workspace-1024x660.webp)
 
 GNOME Shell provides everything you could need from the "system" UI of an operating system: window management, workspaces, app launching, notifications, clock and calendar, quick settings, permissions prompts, system-wide search, and more.
 
-### GNOME Core Apps
+### Core Apps
 
 Suite of apps we consider part of the core computing experience including a file manager, image viewer, text editor, web browser, settings, and many more.
 
@@ -78,6 +78,30 @@ The GNOME project is supported by the non-profit [GNOME Foundation] which provid
 [Attend an Event](https://events.gnome.org/){: .button }
 [Learn More][GNOME Foundation]{: .button }
 </div>
+
+### Supporters
+
+We're supported by our generous network of one-time donors, sponsors, Friends of GNOME, infrastructure supporters, and our Advisory Board.
+
+<div class="supporters" markdown="1">
+![Google](https://www.gnome.org/wp-content/uploads/2021/03/google.png)
+![Endless](https://www.gnome.org/wp-content/uploads/2021/03/endless.png)
+![Debian](https://www.gnome.org/wp-content/uploads/2021/03/debian.png)
+![Ubuntu](https://www.gnome.org/wp-content/uploads/2021/03/Canonical-Ubuntu-350px.png)
+![Document Foundation](https://www.gnome.org/wp-content/uploads/2021/03/thedocumentfoundation.png)
+![Abusix](https://www.gnome.org/wp-content/uploads/2022/12/dddc10fe-5c3f-4d30-a380-52001a1cd648-1611662389702.png)
+![Fastly](https://www.gnome.org/wp-content/uploads/2022/12/Fastly.png)
+![CDN77](https://www.gnome.org/wp-content/uploads/2022/01/CDN77.png)
+![Equinix Metal](https://www.gnome.org/wp-content/uploads/2021/03/equinix.png)
+![OSL](https://www.gnome.org/wp-content/uploads/2021/03/osl.png)
+![Digital Ocean](https://www.gnome.org/wp-content/uploads/2021/03/digitalocean.png)
+![Codethink](https://www.gnome.org/wp-content/uploads/2021/03/codethink-e1614993414347.png)
+![AWS](https://www.gnome.org/wp-content/uploads/2021/03/aws.png)
+![SUSE](https://www.gnome.org/wp-content/uploads/2021/03/suse-logo.png)
+![Sugar Labs](https://www.gnome.org/wp-content/uploads/2021/03/sugarlabs-e1614993431769.png)
+![Red Hat](https://www.gnome.org/wp-content/uploads/2021/03/redhat.png)
+</div>
+
 </main>
 
 [GNOME Foundation]: https://foundation.gnome.org/

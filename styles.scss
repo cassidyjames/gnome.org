@@ -7,28 +7,19 @@
   color-scheme: light dark;
 
   --max-width: 48rem;
+  --bounce: all 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
 
   // Brand colors from brand.gnome.org:
-
-  // Primary
   --rgb-brand-blue: 50, 112, 188;
   --brand-blue: rgb(var(--rgb-brand-blue));
   --link-color: var(--brand-blue);
 
-  // Secondary
-  --rgb-brand-orange: 217, 101, 0;
-  --brand-orange: rgb(var(--rgb-brand-orange));
-
-  --rgb-brand-purple: 122, 55, 145;
+  --rgb-brand-purple: 144, 65, 170;
   --brand-purple: rgb(var(--rgb-brand-purple));
 
-  --rgb-brand-green: 41, 180, 104;
+  --rgb-brand-green: 51, 209, 122;
   --brand-green: rgb(var(--rgb-brand-green));
 
-  --rgb-brand-red: 189, 23, 32;
-  --brand-red: rgb(var(--rgb-brand-red));
-
-  // Neutrals
   --rgb-white: 255, 255, 255;
   --white: rgb(var(--rgb-white));
 
@@ -48,7 +39,7 @@
   @media (prefers-color-scheme: dark) {
     --rgb-bg: var(--rgb-dark-4);
     --rgb-fg: var(--rgb-white);
-    --link-color: #62a0ea;
+    --link-color: #62a0ea; // More accessible on dark backgrounds
   }
 }
 
@@ -81,7 +72,6 @@ html {
 body {
   margin: 0;
 }
-
 
 body > header {
   background-color: var(--brand-blue);
@@ -123,29 +113,31 @@ body > header {
       }
     }
 
-      em {
-        flex-grow: 1;
-        display: flex;
-        justify-content: end;
-        font-style: normal;
+    em {
+      flex-grow: 1;
+      display: flex;
+      justify-content: end;
+      font-style: normal;
 
-        a {
-          background-color: rgba(var(--rgb-white), 1);
-          border-radius: 9999px;
-          color: var(--brand-blue);
-          font-weight: bold;
-          margin: 0.25rem 0.5rem;
-          padding: 0.25rem 0.75rem;
-          transition: all 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
+      a {
+        background-color: var(--white);
+        border-radius: 9999px;
+        color: var(--brand-blue);
+        font-weight: bold;
+        margin: 0.25rem 0.5rem;
+        opacity: 0.95;
+        padding: 0.25rem 0.75rem;
+        transition: var(--bounce);
 
-          &:hover,
-          &:focus,
-          &:active {
-            background-color: rgba(var(--rgb-white), 0.9);
-            transform: scale(1.05);
-          }
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: var(--white);
+          opacity: 1;
+          transform: scale(1.05);
         }
       }
+    }
   }
 }
 
@@ -194,6 +186,12 @@ section.hero {
     -webkit-backdrop-filter: blur(2rem);
     backdrop-filter: blur(2rem);
     color: var(--white);
+    display: inline-block;
+    margin: 0.5rem 0.33rem;
+
+    &.suggested {
+      background-color: var(--brand-green);
+    }
   }
 }
 
@@ -209,12 +207,9 @@ img {
     max-width: calc(var(--max-width) / 2);
   }
 
-  &.icon {
-    filter:
-      drop-shadow(rgba(0, 0, 0, 0.25) 0px 1.3px 1.6px)
-      drop-shadow(rgba(0, 0, 0, 0.14) 0px 6.4px 11.2px);
+  &.symbolic {
+    margin: 2rem auto;
     max-width: 128px;
-    height: auto;
   }
 }
 
@@ -259,20 +254,25 @@ a {
   margin: 3rem auto;
 
   img {
+    filter:
+      drop-shadow(rgba(0, 0, 0, 0.25) 0px 1.3px 1.6px)
+      drop-shadow(rgba(0, 0, 0, 0.14) 0px 6.4px 11.2px);
+    height: auto;
     margin: 0;
+    max-width: 128px;
   }
 }
 
 .supporters {
   p {
+    background-color: white; // Literally white since some logos have white bgs
+    border-radius: 0.5rem;
     column-gap: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    row-gap: 2rem;
-    background-color: var(--white);
-    border-radius: 0.5rem;
     padding: 1rem;
+    row-gap: 2rem;
 
     img {
       height: 2.5rem;
@@ -282,28 +282,17 @@ a {
   }
 }
 
-.buttons {
-  margin: 2em auto;
-  text-align: center;
-
-  a {
-    padding: 1em;
-  }
-}
-
 .button {
   background-color: var(--brand-blue);
   border-radius: 99999px;
   color: var(--white);
-  display: inline-block;
   display: table;
   font-weight: 900;
-  margin: 0.25em 0.5em;
-  margin: 2em auto;
+  margin: 2rem auto 1rem;
   padding: 1em 2em;
   text-align: center;
   text-decoration: none;
-  transition: transform 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
+  transition: var(--bounce);
 
   &:hover,
   &:focus,
@@ -311,14 +300,20 @@ a {
     text-decoration: inherit;
     transform: scale(1.05);
   }
+
+  &.suggested {
+    background-color: var(--brand-green);
+  }
 }
 
 .learn-more {
-  margin: 2rem;
+  margin: 1rem auto;
   text-align: center;
 
   a {
+    display: inline-block;
     margin: 0.5rem;
+    white-space: nowrap;
   }
 
   a::after {
@@ -341,8 +336,8 @@ body > footer {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    max-width: var(--max-width);
     margin-inline: auto;
+    max-width: var(--max-width);
 
     section {
       display: flex;

@@ -3,9 +3,9 @@
 
 ![Laptop](https://os.gnome.org/assets/laptop.png)
 
-[World-Class Computing](#world-class-computing){: .button}
-[Growing Ecosystem](#part-of-a-growing-ecosystem){: .button }
-[Exceptional Community](#exceptional-community){: .button }
+[Learn More](#world-class-computing){: .button}
+[Get GNOME](#get-gnome){: .button }
+[Donate Today][donate]{: .button.suggested }
 </section>
 
 <main markdown="1">
@@ -27,34 +27,21 @@ GNOME Shell provides everything you could need from the "system" UI of an operat
 Suite of apps that make up the core experience including a file manager, video player, image viewer, text editor, web browser, settings, and many more.
 
 <div class="apps" markdown="1">
-![Files](https://apps.gnome.org/icons/scalable/org.gnome.Nautilus.svg){: .icon }
-![Videos](https://apps.gnome.org/icons/scalable/org.gnome.Totem.svg){: .icon }
-![Image Viewer](https://apps.gnome.org/icons/scalable/org.gnome.Loupe.svg){: .icon }
-![Web](https://apps.gnome.org/icons/scalable/org.gnome.Epiphany.svg){: .icon }
-![Settings](https://apps.gnome.org/icons/scalable/org.gnome.Settings.svg){: .icon }
-![Software](https://apps.gnome.org/icons/scalable/org.gnome.Software.svg){: .icon }
+![Files](https://apps.gnome.org/icons/scalable/org.gnome.Nautilus.svg)
+![Videos](https://apps.gnome.org/icons/scalable/org.gnome.Totem.svg)
+![Image Viewer](https://apps.gnome.org/icons/scalable/org.gnome.Loupe.svg)
+![Web](https://apps.gnome.org/icons/scalable/org.gnome.Epiphany.svg)
+![Settings](https://apps.gnome.org/icons/scalable/org.gnome.Settings.svg)
+![Software](https://apps.gnome.org/icons/scalable/org.gnome.Software.svg)
 </div>
 
-GNOME apps are designed to be simple and consistent so once you've used one, each feels familiar and intuitive. 
+GNOME apps are designed to be simple and consistent so once you've used one, each feels familiar and intuitive.
 
 <div class="learn-more" markdown="1">
 [Explore Core Apps](https://apps.gnome.org/#core)
 </div>
 
-### Get GNOME
-
-GNOME is used as the default experience across [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), [Ubuntu](https://ubuntu.com/desktop), [Debian](https://www.debian.org/), [Fedora](https://fedoraproject.org/), [Vanilla OS](https://vanillaos.org/), [Endless OS](https://endlessos.org/os), and more.
-
-GNOME is available for most other Linux distributions, such as [Arch Linux](https://archlinux.org) and [openSUSE](https://www.opensuse.org).
-
-We also provide a reference [GNOME OS] for testing and development.
-
-<div class="learn-more" markdown="1">
-[Read Release Notes](https://release.gnome.org)
-[Get GNOME OS][GNOME OS]
-</div>
-
-## Part of a growing ecosystem
+## Growing ecosystem
 
 We work with the larger free and open source community on shared technologies, interoperability, specifications, best practices, and standards.
 
@@ -76,10 +63,24 @@ We're not one monolithic entity—we may not always agree on everything!—but w
 
 Contributors to GNOME can apply for [GNOME Foundation Membership](https://foundation.gnome.org/membership/) which comes with voting rights, the ability to run for election to the Board of Directors, and other privileges.
 
-<div class="buttons" markdown="1">
-[Get Involved](https://welcome.gnome.org){: .button.suggested }
-[Community Discussions](https://discourse.gnome.org){: .button }
-[Code of Conduct](https://conduct.gnome.org){: .button }
+[Get Involved](https://welcome.gnome.org){: .button }
+
+<div class="learn-more" markdown="1">
+[Community Discussions](https://discourse.gnome.org)
+[Code of Conduct](https://conduct.gnome.org)
+</div>
+
+## Get GNOME
+
+GNOME is used as the default experience across [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), [Ubuntu](https://ubuntu.com/desktop), [Debian](https://www.debian.org/), [Fedora](https://fedoraproject.org/), [Vanilla OS](https://vanillaos.org/), [Endless OS](https://endlessos.org/os), and more.
+
+![Download](assets/check-round-outline-symbolic.svg){: .symbolic }
+
+GNOME is available for most other Linux distributions, such as [Arch Linux](https://archlinux.org) and [openSUSE](https://www.opensuse.org). We also provide a reference [GNOME OS] for testing and development.
+
+<div class="learn-more" markdown="1">
+[Read Release Notes](https://release.gnome.org)
+[Get GNOME OS][GNOME OS]
 </div>
 
 ## Non-profit foundation

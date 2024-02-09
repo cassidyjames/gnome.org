@@ -37,7 +37,9 @@ Suite of apps that make up the core experience including a file manager, video p
 
 GNOME apps are designed to be simple and consistent so once you've used one, each feels familiar and intuitive. 
 
-[Explore Core Apps](https://apps.gnome.org/#core){: .button.standalone }
+<div class="learn-more" markdown="1">
+[Explore Core Apps](https://apps.gnome.org/#core)
+</div>
 
 ### Get GNOME
 
@@ -47,7 +49,7 @@ GNOME is available for most other Linux distributions, such as [Arch Linux](http
 
 We also provide a reference [GNOME OS] for testing and development.
 
-<div class="buttons" markdown="1">
+<div class="learn-more" markdown="1">
 [Read Release Notes](https://release.gnome.org)
 [Get GNOME OS][GNOME OS]
 </div>
@@ -84,10 +86,11 @@ Contributors to GNOME can apply for [GNOME Foundation Membership](https://founda
 
 The GNOME project is supported by the non-profit [GNOME Foundation] which provides guidance, logistics, legal support, and more. We're funded **entirely by donations and sponsorships**—if you want to help GNOME, consider [donating][Donate]!
 
-<div class="buttons" markdown="1">
 [Donate Today][Donate]{: .button.suggested }
-[Attend an Event](https://events.gnome.org/){: .button }
-[Learn More][GNOME Foundation]{: .button }
+
+<div class="learn-more" markdown="1">
+[Attend an Event](https://events.gnome.org/)
+[Learn More][GNOME Foundation]
 </div>
 
 ### Supporters

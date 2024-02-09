@@ -34,11 +34,11 @@ GNOME is used as the default experience across [Red Hat Enterprise Linux](https:
 
 GNOME is available for most other Linux distributions, such as [Arch Linux](https://archlinux.org) and [openSUSE](https://www.opensuse.org).
 
-We also provide a [reference OS](https://os.gnome.org) for testing and development.
+We also provide a reference [GNOME OS] for testing and development.
 
 <div class="buttons" markdown="1">
-[Read Release Notes](https://release.gnome.org){: .button }
-[Get GNOME OS](https://os.gnome.org){: .button }
+[Read Release Notes](https://release.gnome.org)
+[Get GNOME OS][GNOME OS]
 </div>
 
 ## Growing ecosystem
@@ -71,11 +71,15 @@ Contributors to GNOME can apply for [GNOME Foundation Membership](https://founda
 
 ## Non-profit foundation
 
-The GNOME project is supported by the non-profit [GNOME Foundation](https://foundation.gnome.org) which provides guidance, logistics, legal support, and more. We're funded **entirely by donations and sponsorships**—if you want to help GNOME, consider donating!
+The GNOME project is supported by the non-profit [GNOME Foundation] which provides guidance, logistics, legal support, and more. We're funded **entirely by donations and sponsorships**—if you want to help GNOME, consider [donating][Donate]!
 
 <div class="buttons" markdown="1">
-[Donate Today](https://gnome.org/donate){: .button.suggested }
+[Donate Today][Donate]{: .button.suggested }
 [Attend an Event](https://events.gnome.org/){: .button }
-[Learn More](https://foundation.gnome.org/){: .button }
+[Learn More][GNOME Foundation]{: .button }
 </div>
 </main>
+
+[GNOME Foundation]: https://foundation.gnome.org/
+[GNOME OS]: https://os.gnome.org
+[Donate]: https://www.gnome.org/donate)

@@ -37,8 +37,8 @@ GNOME is available for most other Linux distributions, such as [Arch Linux](http
 We also provide a [reference OS](https://os.gnome.org) for testing and development.
 
 <div class="buttons" markdown="1">
-[See Recent Releases](https://release.gnome.org){: .button.suggested }
-[Explore GNOME OS](https://os.gnome.org){: .button }
+[Read Release Notes](https://release.gnome.org){: .button }
+[Get GNOME OS](https://os.gnome.org){: .button }
 </div>
 
 ## Growing ecosystem
@@ -75,7 +75,7 @@ The GNOME project is supported by the non-profit [GNOME Foundation](https://foun
 
 <div class="buttons" markdown="1">
 [Donate Today](https://gnome.org/donate){: .button.suggested }
-[Explore Events](https://events.gnome.org/){: .button }
+[Attend an Event](https://events.gnome.org/){: .button }
 [Learn More](https://foundation.gnome.org/){: .button }
 </div>
 </main>

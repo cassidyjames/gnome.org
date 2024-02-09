@@ -43,9 +43,9 @@ We also provide a [reference OS](https://os.gnome.org) for testing and developme
 
 ## Growing ecosystem
 
-![Apps](https://apps.gnome.org/assets/overview-illustration/boring.svg)
-
 We work with the larger free and open source community on shared technologies, interoperability, specifications, best practices, and standards.
+
+![Apps](https://apps.gnome.org/assets/overview-illustration/boring.svg){: .half }
 
 - **[GNOME Circle](https://circle.gnome.org)**: community-developed apps that follow GNOME best practices and guidelines for a cohesive experience
 

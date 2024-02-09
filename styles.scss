@@ -165,6 +165,10 @@ img {
   margin-inline: auto;
   max-width: 100%;
   width: 100%;
+
+  &.half {
+    max-width: calc(var(--max-width) / 2);
+  }
 }
 
 h2, h3 {

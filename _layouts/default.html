@@ -9,12 +9,13 @@
   <body>
     <header>
       <nav>
-        <a href="#">GNOME</a>
+        <a class="home" href="#">GNOME</a>
         <a href="https://welcome.gnome.org">Get Involved</a>
         <a href="https://foundation.gnome.org">Foundation</a>
-        <a href="https://events.gnome.org">Events</a>
         <a href="https://shop.gnome.org">Shop</a>
-        <a href="https://www.gnome.org/donate">Donate</a>
+        <em>
+          <a href="https://www.gnome.org/donate">Donate</a>
+        </em>
       </nav>
     </header>
     {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}

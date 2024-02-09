@@ -83,6 +83,7 @@ body {
 }
 
 header nav {
+  align-items: center;
   background-color: var(--brand-blue);
   display: flex;
   flex-wrap: wrap;
@@ -90,8 +91,12 @@ header nav {
   a {
     color: var(--white);
     font-weight: normal;
-    padding: 1em;
+    padding: 0.5rem;
     text-decoration: none;
+
+    @media (min-width: 600px) {
+      padding: 1rem;
+    }
 
     &:hover,
     &:active,
@@ -100,7 +105,8 @@ header nav {
       text-decoration: none;
     }
 
-    &:first-child {
+    &.home {
+      align-self: stretch;
       background-image: url("assets/logo-horizontal.svg");
       background-position: center;
       background-repeat: no-repeat;
@@ -110,6 +116,30 @@ header nav {
       width: 6.5rem;
     }
   }
+
+    em {
+      flex-grow: 1;
+      display: flex;
+      justify-content: end;
+      font-style: normal;
+
+      a {
+        background-color: rgba(var(--rgb-white), 1);
+        border-radius: 9999px;
+        color: var(--brand-blue);
+        font-weight: bold;
+        margin: 0.25rem 0.5rem;
+        padding: 0.25rem 0.75rem;
+        transition: all 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: rgba(var(--rgb-white), 0.9);
+          transform: scale(1.05);
+        }
+      }
+    }
 }
 
 main {
@@ -223,7 +253,9 @@ a {
   text-decoration: none;
   transition: all 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background-color: rgba(var(--rgb-fg), 0.25);
     text-decoration: none;
     transform: scale(1.05);

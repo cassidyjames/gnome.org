@@ -37,7 +37,7 @@ GNOME is available for most other Linux distributions, such as [Arch Linux](http
 We also provide a [reference OS](https://os.gnome.org) for testing and development.
 
 <div class="buttons" markdown="1">
-[See Recent Releases](https://releases.gnome.org){: .button.suggested }
+[See Recent Releases](https://release.gnome.org){: .button.suggested }
 [Explore GNOME OS](https://os.gnome.org){: .button }
 </div>
 

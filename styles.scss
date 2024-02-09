@@ -88,6 +88,7 @@ header nav {
 
   a {
     color: var(--white);
+    font-weight: normal;
     padding: 1em;
     text-decoration: none;
 
@@ -95,6 +96,7 @@ header nav {
     &:active,
     &:focus {
       background-color: rgba(var(--rgb-bg), 0.25);
+      text-decoration: none;
     }
 
     &:first-child {
@@ -150,7 +152,10 @@ section.hero {
   }
 
   .button {
-    color: white;
+    background-color: rgba(var(--rgb-white), 0.25);
+    -webkit-backdrop-filter: blur(2rem);
+    backdrop-filter: blur(2rem);
+    color: var(--white);
   }
 }
 

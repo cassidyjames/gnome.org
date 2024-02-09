@@ -4,7 +4,7 @@
 ![Laptop](https://os.gnome.org/assets/laptop.png)
 
 [World-Class Computing](#world-class-computing){: .button}
-[Growing Ecosystem](#growing-ecosystem){: .button }
+[Growing Ecosystem](#part-of-a-growing-ecosystem){: .button }
 [Exceptional Community](#exceptional-community){: .button }
 </section>
 
@@ -24,7 +24,18 @@ GNOME Shell provides everything you could need from the "system" UI of an operat
 
 ### Core Apps
 
-Suite of apps we consider part of the core computing experience including a file manager, image viewer, text editor, web browser, settings, and many more.
+Suite of apps that make up the core experience including a file manager, video player, image viewer, text editor, web browser, settings, and many more.
+
+<div class="apps" markdown="1">
+![Files](https://apps.gnome.org/icons/scalable/org.gnome.Nautilus.svg){: .icon }
+![Videos](https://apps.gnome.org/icons/scalable/org.gnome.Totem.svg){: .icon }
+![Image Viewer](https://apps.gnome.org/icons/scalable/org.gnome.Loupe.svg){: .icon }
+![Web](https://apps.gnome.org/icons/scalable/org.gnome.Epiphany.svg){: .icon }
+![Settings](https://apps.gnome.org/icons/scalable/org.gnome.Settings.svg){: .icon }
+![Software](https://apps.gnome.org/icons/scalable/org.gnome.Software.svg){: .icon }
+</div>
+
+GNOME apps are designed to be simple and consistent so once you've used one, each feels familiar and intuitive. 
 
 [Explore Core Apps](https://apps.gnome.org/#core){: .button.standalone }
 
@@ -41,7 +52,7 @@ We also provide a reference [GNOME OS] for testing and development.
 [Get GNOME OS][GNOME OS]
 </div>
 
-## Growing ecosystem
+## Part of a growing ecosystem
 
 We work with the larger free and open source community on shared technologies, interoperability, specifications, best practices, and standards.
 

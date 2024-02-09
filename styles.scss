@@ -208,6 +208,14 @@ img {
   &.half {
     max-width: calc(var(--max-width) / 2);
   }
+
+  &.icon {
+    filter:
+      drop-shadow(rgba(0, 0, 0, 0.25) 0px 1.3px 1.6px)
+      drop-shadow(rgba(0, 0, 0, 0.14) 0px 6.4px 11.2px);
+    max-width: 128px;
+    height: auto;
+  }
 }
 
 h2, h3 {
@@ -244,9 +252,18 @@ a {
   }
 }
 
-.supporters {
-  overflow-x: hidden;
+.apps p {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  margin: 3rem auto;
 
+  img {
+    margin: 0;
+  }
+}
+
+.supporters {
   p {
     column-gap: 0.5rem;
     display: flex;
@@ -331,7 +348,7 @@ body > footer {
   }
 
   p {
-    margin: 3rem auto 2rem;
+    margin: 3rem auto 0;
     text-align: center;
   }
 }

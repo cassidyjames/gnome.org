@@ -5,11 +5,14 @@
 :root {
   color-scheme: light dark;
 
+  --max-width: 48rem;
+
   // Brand colors from brand.gnome.org:
 
   // Primary
   --rgb-brand-blue: 50, 112, 188;
   --brand-blue: rgb(var(--rgb-brand-blue));
+  --link-color: var(--brand-blue);
 
   // Secondary
   --rgb-brand-orange: 217, 101, 0;
@@ -44,6 +47,7 @@
   @media (prefers-color-scheme: dark) {
     --rgb-bg: var(--rgb-dark-4);
     --rgb-fg: var(--rgb-white);
+    --link-color: #62a0ea;
   }
 }
 
@@ -105,8 +109,10 @@ header nav {
   }
 }
 
-section {
+main {
   padding: 0 1em;
+  max-width: var(--max-width);
+  margin-inline: auto;
 }
 
 section.hero {
@@ -140,7 +146,11 @@ section.hero {
   }
 
   img {
-    max-width: 48rem;
+    max-width: var(--max-width);
+  }
+
+  .button {
+    color: white;
   }
 }
 
@@ -154,21 +164,46 @@ img {
 
 h2, h3 {
   margin-top: 3em;
+  margin-bottom: 0;
   scroll-margin-top: 1rem;
+
+  &:first-of-type {
+    margin-top: 2em;
+  }
 }
 
 h2 {
-  font-siz: 2rem;
+  font-size: 3rem;
   font-weight: 900;
 }
 
+h2 + p {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
 a {
-  color: inherit;
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.buttons {
+  margin: 2em auto;
+  text-align: center;
 }
 
 .button {
   background-color: rgba(var(--rgb-fg), 0.125);
   border-radius: 99999px;
+  color: inherit;
   display: inline-block;
   font-weight: 900;
   margin-inline: 0.5em;
@@ -179,12 +214,17 @@ a {
 
   &:hover {
     background-color: rgba(var(--rgb-fg), 0.25);
+    text-decoration: none;
     transform: scale(1.05);
   }
 
   &.standalone {
     display: table;
-    font-size: 1.2em;
-    margin-inline: auto;
+    margin: 2em auto;
+  }
+
+  &.suggested {
+    background-color: var(--brand-blue);
+    color: var(--white);
   }
 }

@@ -71,7 +71,7 @@ Contributors to GNOME can apply for [GNOME Foundation Membership](https://founda
 
 ## Non-profit foundation
 
-The GNOME project is supported by the non-profit [GNOME Foundation](https://foundation.gnome.org) which provides guidance, logistics, legal support, and more. We're funded **entirely by donations and sponsorships**—if you want to help GNOME, consider [donating](https://www.gnome.org/donate)!
+The GNOME project is supported by the non-profit [GNOME Foundation](https://foundation.gnome.org) which provides guidance, logistics, legal support, and more. We're funded **entirely by donations and sponsorships**—if you want to help GNOME, consider donating!
 
 <div class="buttons" markdown="1">
 [Donate Today](https://gnome.org/donate){: .button.suggested }

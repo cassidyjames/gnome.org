@@ -1,0 +1,5 @@
+title: GNOME
+description: World-class computing, growing ecosystem, exceptional community
+
+plugins:
+  - jekyll-redirect-from

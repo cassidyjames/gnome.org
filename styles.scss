@@ -1,0 +1,190 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+:root {
+  color-scheme: light dark;
+
+  // Brand colors from brand.gnome.org:
+
+  // Primary
+  --rgb-brand-blue: 50, 112, 188;
+  --brand-blue: rgb(var(--rgb-brand-blue));
+
+  // Secondary
+  --rgb-brand-orange: 217, 101, 0;
+  --brand-orange: rgb(var(--rgb-brand-orange));
+
+  --rgb-brand-purple: 122, 55, 145;
+  --brand-purple: rgb(var(--rgb-brand-purple));
+
+  --rgb-brand-green: 41, 180, 104;
+  --brand-green: rgb(var(--rgb-brand-green));
+
+  --rgb-brand-red: 189, 23, 32;
+  --brand-red: rgb(var(--rgb-brand-red));
+
+  // Neutrals
+  --rgb-white: 255, 255, 255;
+  --white: rgb(var(--rgb-white));
+
+  --rgb-dark-1: 119, 118, 123;
+  --dark-1: rgb(var(--rgb-dark-1));
+
+  --rgb-dark-4: 36, 31, 49;
+  --dark-4: rgb(var(--rgb-dark-4));
+
+  // Semantic
+  --rgb-bg: var(--rgb-white);
+  --bg: rgb(var(--rgb-bg));
+
+  --rgb-fg: var(--rgb-dark-4);
+  --fg: rgb(var(--rgb-fg));
+
+  @media (prefers-color-scheme: dark) {
+    --rgb-bg: var(--rgb-dark-4);
+    --rgb-fg: var(--rgb-white);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Inter", sans-serif;
+  font-size: 5vw; // Adapts to arbitrarily small displays
+  font-weight: 400;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+
+  @media (min-width: 320px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 18px;
+  }
+
+  @media print {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+header nav {
+  background-color: var(--brand-blue);
+  display: flex;
+  flex-wrap: wrap;
+
+  a {
+    color: var(--white);
+    padding: 1em;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: rgba(var(--rgb-bg), 0.25);
+    }
+
+    &:first-child {
+      background-image: url("assets/logo-horizontal.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-size: 0;
+      padding: 0;
+      width: 6.5rem;
+    }
+  }
+}
+
+section {
+  padding: 0 1em;
+}
+
+section.hero {
+  background-image:
+    url("https://brand.gnome.org/assets/tris.svg"),
+    linear-gradient(45deg,
+      rgba(var(--rgb-brand-blue), 0.75) 50%,
+      rgba(var(--rgb-brand-purple), 0.75) 100%
+    );
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 60%, 100%;
+  overflow: auto;
+  padding-bottom: 2rem;
+  text-align: center;
+
+  h1 {
+    background-image: url("assets/logo-horizontal.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    height: 8rem;
+    margin: 2rem 0 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    max-width: 48rem;
+  }
+}
+
+img {
+  display: block;
+  height: auto;
+  margin-inline: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+h2, h3 {
+  margin-top: 3em;
+  scroll-margin-top: 1rem;
+}
+
+h2 {
+  font-siz: 2rem;
+  font-weight: 900;
+}
+
+a {
+  color: inherit;
+}
+
+.button {
+  background-color: rgba(var(--rgb-fg), 0.125);
+  border-radius: 99999px;
+  display: inline-block;
+  font-weight: 900;
+  margin-inline: 0.5em;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
+
+  &:hover {
+    background-color: rgba(var(--rgb-fg), 0.25);
+    transform: scale(1.05);
+  }
+
+  &.standalone {
+    display: table;
+    font-size: 1.2em;
+    margin-inline: auto;
+  }
+}

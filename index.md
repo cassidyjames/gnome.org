@@ -121,4 +121,4 @@ We're supported by our generous network of one-time donors, sponsors, Friends of
 
 [GNOME Foundation]: https://foundation.gnome.org/
 [GNOME OS]: https://os.gnome.org
-[Donate]: https://www.gnome.org/donate)
+[Donate]: https://www.gnome.org/donate

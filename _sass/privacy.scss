@@ -55,14 +55,29 @@ body.privacy {
     background-image: url("assets/flatpak-symbolic.svg");
   }
 
+  #privacy-indication::before {
+    @include heading-icon;
+    background-image: url("assets/microphone2-symbolic.svg");
+  }
+
   #permissions::before {
     @include heading-icon;
     background-image: url("assets/permissions-generic-symbolic.svg");
   }
 
-  #privacy-indication::before {
+  #automatic-deletion::before {
     @include heading-icon;
-    background-image: url("assets/microphone2-symbolic.svg");
+    background-image: url("assets/empty-trash-bin-symbolic.svg");
+  }
+
+  #verified-apps::before {
+    @include heading-icon;
+    background-image: url("assets/verified-checkmark-symbolic.svg");
+  }
+
+  #device-security::before {
+    @include heading-icon;
+    background-image: url("assets/shield-safe-symbolic.svg");
   }
 
   #local-first::before {

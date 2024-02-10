@@ -10,7 +10,7 @@ We believe everyone deserves privacy, and we respect that right. GNOME products 
 
 ## Features & Techniques
 
-We build privacy-respecting features and use privacy-preserving approaches across the entire GNOME desktop.
+We build privacy-respecting security features and use privacy-preserving approaches across the entire GNOME desktop.
 
 <section>
 <div markdown="1">
@@ -20,7 +20,7 @@ We use sandboxing technologies like [Flatpak](https://flatpak.org/) and [Portals
 </div>
 
 <div markdown="1">
-### Privacy indication
+### Privacy Indication
 
 GNOME Shell reveals when apps are known to be accessing your webcam, listening to your microphone, viewing your screen, or running in the background with highly visible, on-screen indicators in the top bar.
 </div>
@@ -32,9 +32,27 @@ Control per-app permissions including which apps are allowed to process and retu
 </div>
 
 <div markdown="1">
+### Automatic Deletion
+
+Trashed and temporary files on your device can expose sensitive information to prying eyes. GNOME helps you choose whether and how often to automatically delete this data.
+</div>
+
+<div markdown="1">
+### Device Security
+
+The Settings app exposes your hardware's level of protection from security threats, based on the [Host Security ID](https://fwupd.github.io/libfwupdplugin/hsi.html) specification. Device Security also flags known security events so you can be as informed as possible.
+</div>
+
+<div markdown="1">
 ### Local-first
 
-GNOME is primarily local-first; that is, apps and features run locally on your device—and only use the network when required for a specific feature you're actively using.
+Apps and features run locally on your device, only using the network when required for a specific feature you're actively using. Your documents, settings, and personal data are never uploaded or shared with anyone without you actively taking action to do so.
+</div>
+
+<div markdown="1">
+### Verified Apps
+
+GNOME Software shows when a developer has verified the ownership of their app, helping you trust it is what it says it is.
 </div>
 
 <div markdown="1">

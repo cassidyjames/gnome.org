@@ -1,0 +1,34 @@
+:root {
+  // Brand colors from brand.gnome.org:
+  --rgb-brand-blue: 50, 112, 188;
+  --brand-blue: rgb(var(--rgb-brand-blue));
+  --link-color: var(--brand-blue);
+
+  --rgb-brand-purple: 144, 65, 170;
+  --brand-purple: rgb(var(--rgb-brand-purple));
+
+  --rgb-brand-green: 51, 209, 122;
+  --brand-green: rgb(var(--rgb-brand-green));
+
+  --rgb-white: 255, 255, 255;
+  --white: rgb(var(--rgb-white));
+
+  --rgb-dark-1: 119, 118, 123;
+  --dark-1: rgb(var(--rgb-dark-1));
+
+  --rgb-dark-4: 36, 31, 49;
+  --dark-4: rgb(var(--rgb-dark-4));
+
+  // Semantic
+  --rgb-bg: var(--rgb-white);
+  --bg: rgb(var(--rgb-bg));
+
+  --rgb-fg: var(--rgb-dark-4);
+  --fg: rgb(var(--rgb-fg));
+
+  @media (prefers-color-scheme: dark) {
+    --rgb-bg: var(--rgb-dark-4);
+    --rgb-fg: var(--rgb-white);
+    --link-color: #62a0ea; // More accessible on dark backgrounds
+  }
+}

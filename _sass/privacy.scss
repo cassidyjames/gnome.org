@@ -1,0 +1,82 @@
+@mixin heading-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 32px;
+  margin-right: 0.25em;
+  width: 32px;
+}
+
+body.privacy {
+  // --link-color: #62a0ea; // More accessible on dark backgrounds
+
+  // background-image: linear-gradient(#241f31, #3d3846);
+  // color: white;
+
+  > main {
+    text-align: center;
+    text-wrap: balance;
+
+    > section {
+      margin-top: 4em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: center;
+
+      div {
+        max-width: 24em;
+      }
+
+      @media (min-width: 600px) {
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+        width: calc(100vw - 2rem);
+      }
+
+      h3,
+      h4 {
+        break-after: avoid;
+        margin-top: 0;
+      }
+
+      p {
+        break-inside: avoid;
+        margin-bottom: 3em;
+      }
+    }
+  }
+
+  #sandboxing::before {
+    @include heading-icon;
+    background-image: url("assets/flatpak-symbolic.svg");
+  }
+
+  #permissions::before {
+    @include heading-icon;
+    background-image: url("assets/permissions-generic-symbolic.svg");
+  }
+
+  #privacy-indication::before {
+    @include heading-icon;
+    background-image: url("assets/microphone2-symbolic.svg");
+  }
+
+  #local-first::before {
+    @include heading-icon;
+    background-image: url("assets/cloud-disabled-symbolic.svg");
+  }
+
+  #non-profit::before {
+    @include heading-icon;
+    background-image: url("assets/people-symbolic.svg");
+  }
+
+  #open-source::before {
+    @include heading-icon;
+    background-image: url("assets/check-round-outline-symbolic.svg");
+  }
+}

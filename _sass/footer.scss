@@ -1,0 +1,37 @@
+body > footer {
+  background-color: black;
+  color: white;
+  margin-top: 4rem;
+  padding: 1rem;
+
+  a {
+    color: inherit;
+    font-weight: normal;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-inline: auto;
+    max-width: var(--max-width);
+
+    section {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 0.5rem;
+      line-height: 1.25;
+      max-width: calc(50% - 2rem);
+
+      header {
+        font-weight: bold;
+      }
+    }
+  }
+
+  p {
+    margin: 3rem auto 0;
+    text-align: center;
+  }
+}

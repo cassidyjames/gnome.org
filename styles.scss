@@ -1,46 +1,21 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# See _sass for the imported styles
 ---
-@import url('https://rsms.me/inter/inter.css');
+@charset "utf-8";
+
+@import url("https://rsms.me/inter/inter.css");
+@import "colors";
+@import "header";
+@import "footer";
+@import "buttons";
+@import "home";
+@import "privacy";
 
 :root {
   color-scheme: light dark;
 
   --max-width: 48rem;
   --bounce: all 350ms cubic-bezier(0.17, 0.89, 0.32, 1.28);
-
-  // Brand colors from brand.gnome.org:
-  --rgb-brand-blue: 50, 112, 188;
-  --brand-blue: rgb(var(--rgb-brand-blue));
-  --link-color: var(--brand-blue);
-
-  --rgb-brand-purple: 144, 65, 170;
-  --brand-purple: rgb(var(--rgb-brand-purple));
-
-  --rgb-brand-green: 51, 209, 122;
-  --brand-green: rgb(var(--rgb-brand-green));
-
-  --rgb-white: 255, 255, 255;
-  --white: rgb(var(--rgb-white));
-
-  --rgb-dark-1: 119, 118, 123;
-  --dark-1: rgb(var(--rgb-dark-1));
-
-  --rgb-dark-4: 36, 31, 49;
-  --dark-4: rgb(var(--rgb-dark-4));
-
-  // Semantic
-  --rgb-bg: var(--rgb-white);
-  --bg: rgb(var(--rgb-bg));
-
-  --rgb-fg: var(--rgb-dark-4);
-  --fg: rgb(var(--rgb-fg));
-
-  @media (prefers-color-scheme: dark) {
-    --rgb-bg: var(--rgb-dark-4);
-    --rgb-fg: var(--rgb-white);
-    --link-color: #62a0ea; // More accessible on dark backgrounds
-  }
 }
 
 * {
@@ -70,81 +45,18 @@ html {
 }
 
 body {
+  display: flex;
+  height: 100%;
   margin: 0;
-}
-
-body > header {
-  background-color: var(--brand-blue);
-  color: var(--white);
-
-  nav {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-inline: auto;
-    max-width: var(--max-width);
-
-    a {
-      color: inherit;
-      font-weight: normal;
-      padding: 0.5rem;
-      text-decoration: none;
-
-      @media (min-width: 600px) {
-        padding: 1rem;
-      }
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: rgba(var(--rgb-bg), 0.25);
-        text-decoration: none;
-      }
-
-      &.home {
-        align-self: stretch;
-        background-image: url("assets/logo-horizontal.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        font-size: 0;
-        padding: 0;
-        width: 6.5rem;
-      }
-    }
-
-    em {
-      flex-grow: 1;
-      display: flex;
-      justify-content: end;
-      font-style: normal;
-
-      a {
-        background-color: var(--white);
-        border-radius: 9999px;
-        color: var(--brand-blue);
-        font-weight: bold;
-        margin: 0.25rem 0.5rem;
-        opacity: 0.95;
-        padding: 0.25rem 0.75rem;
-        transition: var(--bounce);
-
-        &:hover,
-        &:focus,
-        &:active {
-          background-color: var(--white);
-          opacity: 1;
-          transform: scale(1.05);
-        }
-      }
-    }
-  }
+  flex-direction: column;
 }
 
 body > main {
-  padding: 0 1em;
-  max-width: var(--max-width);
+  flex-grow: 1;
   margin-inline: auto;
+  max-width: var(--max-width);
+  padding: 0 1em;
+  width: 100%;
 }
 
 section.hero {
@@ -157,7 +69,6 @@ section.hero {
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 60%, 100%;
-  overflow: auto;
   padding-bottom: 2rem;
   text-align: center;
 
@@ -213,24 +124,34 @@ img {
   }
 }
 
-h2, h3 {
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
   line-height: 1;
-  margin-top: 3em;
-  margin-bottom: 0;
-  scroll-margin-top: 1rem;
+  margin: 2em auto 0;
+  text-align: center;
 
-  &:first-of-type {
-    margin-top: 2em;
+  + p {
+    font-size: 1.25rem;
+    text-align: center;
+    text-wrap: balance;
   }
+}
+
+h2,
+h3 {
+  line-height: 1;
+  margin: 2em auto 0;
+  scroll-margin-top: 1rem;
 }
 
 h2 {
   font-size: 3rem;
   font-weight: 900;
-}
 
-h2 + p {
-  font-size: 1.25rem;
+  + p {
+    font-size: 1.25rem;
+  }
 }
 
 h3 {
@@ -282,79 +203,24 @@ a {
   }
 }
 
-.button {
-  background-color: var(--brand-blue);
-  border-radius: 99999px;
-  color: var(--white);
-  display: table;
-  font-weight: 900;
-  margin: 2rem auto 1rem;
-  padding: 1em 2em;
-  text-align: center;
-  text-decoration: none;
-  transition: var(--bounce);
-
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration: inherit;
-    transform: scale(1.05);
-  }
-
-  &.suggested {
-    background-color: var(--brand-green);
-  }
-}
-
-.learn-more {
+div.learn-more {
   margin: 1rem auto;
   text-align: center;
+}
 
-  a {
-    display: inline-block;
-    margin: 0.5rem;
-    white-space: nowrap;
-  }
+div.learn-more a,
+a.learn-more {
+  display: inline-block;
+  margin: 0.5rem;
+  white-space: nowrap;
+  width: fit-content;
 
-  a::after {
+  &::after {
     content: " →"
   }
 }
 
-body > footer {
-  background-color: black;
-  color: white;
-  margin-top: 4rem;
-  padding: 1rem;
-
-  a {
-    color: inherit;
-    font-weight: normal;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-inline: auto;
-    max-width: var(--max-width);
-
-    section {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      gap: 0.5rem;
-      line-height: 1.25;
-      max-width: calc(50% - 2rem);
-
-      header {
-        font-weight: bold;
-      }
-    }
-  }
-
-  p {
-    margin: 3rem auto 0;
-    text-align: center;
-  }
+a.learn-more {
+  display: block;
+  margin-inline: auto;
 }

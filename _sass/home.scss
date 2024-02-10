@@ -1,0 +1,10 @@
+body.home {
+  h2,
+  h3 {
+    margin-top: 3em;
+
+    &:first-of-type {
+      margin-top: 2em;
+    }
+  }
+}

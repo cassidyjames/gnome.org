@@ -1,0 +1,23 @@
+.button {
+  background-color: var(--brand-blue);
+  border-radius: 99999px;
+  color: var(--white);
+  display: table;
+  font-weight: 900;
+  margin: 2rem auto 1rem;
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  transition: var(--bounce);
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: inherit;
+    transform: scale(1.05);
+  }
+
+  &.suggested {
+    background-color: var(--brand-green);
+  }
+}

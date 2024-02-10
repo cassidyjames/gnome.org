@@ -4,9 +4,12 @@
     <title>{{ site.title }} – {{ site.description }}</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+    <link rel="stylesheet" type="text/css" media="all" href="{{ '/styles.css' | prepend: site.baseurl }}">
   </head>
-  <body>
+  <body class="
+    {% if page.url == '/' %} home {% endif %}
+    {{ page.url | replace: '.html', '' | slugify }}
+  ">
     {% include header.html %}
 
     {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
